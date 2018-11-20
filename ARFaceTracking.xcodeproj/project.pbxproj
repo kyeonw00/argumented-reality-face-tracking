@@ -17,7 +17,7 @@
 		F179930421A3B39500573EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F179930221A3B39500573EB6 /* LaunchScreen.storyboard */; };
 		F179931121A3E58E00573EB6 /* VirtualContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179931021A3E58E00573EB6 /* VirtualContent.swift */; };
 		F179931321A3E6A100573EB6 /* TransformVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179931221A3E6A100573EB6 /* TransformVisualization.swift */; };
-		F179931521A3E7CA00573EB6 /* VideoTexutredFace.shader in Resources */ = {isa = PBXBuildFile; fileRef = F179931421A3E7CA00573EB6 /* VideoTexutredFace.shader */; };
+		F179931521A3E7CA00573EB6 /* VideoTexturedFace.shader in Resources */ = {isa = PBXBuildFile; fileRef = F179931421A3E7CA00573EB6 /* VideoTexturedFace.shader */; };
 		F179931921A3EFE500573EB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179931821A3EFE500573EB6 /* Utilities.swift */; };
 		F179931B21A3F26000573EB6 /* TexturedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179931A21A3F26000573EB6 /* TexturedFace.swift */; };
 		F179931D21A3F4FC00573EB6 /* FaceOcclusionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179931C21A3F4FC00573EB6 /* FaceOcclusionOverlay.swift */; };
@@ -37,7 +37,7 @@
 		F179930521A3B39500573EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F179931021A3E58E00573EB6 /* VirtualContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContent.swift; sourceTree = "<group>"; };
 		F179931221A3E6A100573EB6 /* TransformVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformVisualization.swift; sourceTree = "<group>"; };
-		F179931421A3E7CA00573EB6 /* VideoTexutredFace.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = VideoTexutredFace.shader; sourceTree = "<group>"; };
+		F179931421A3E7CA00573EB6 /* VideoTexturedFace.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = VideoTexturedFace.shader; sourceTree = "<group>"; };
 		F179931621A3ED8D00573EB6 /* ARFaceGeometry.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ARFaceGeometry.obj; path = ../../../../Downloads/CreatingFaceBasedARExperiences/ARFaceGeometry.obj; sourceTree = "<group>"; };
 		F179931821A3EFE500573EB6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F179931A21A3F26000573EB6 /* TexturedFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturedFace.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				F147013D21A4110300C038E1 /* Main.storyboard */,
 				F179930221A3B39500573EB6 /* LaunchScreen.storyboard */,
 				F179930521A3B39500573EB6 /* Info.plist */,
-				F179931421A3E7CA00573EB6 /* VideoTexutredFace.shader */,
+				F179931421A3E7CA00573EB6 /* VideoTexturedFace.shader */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F179931521A3E7CA00573EB6 /* VideoTexutredFace.shader in Resources */,
+				F179931521A3E7CA00573EB6 /* VideoTexturedFace.shader in Resources */,
 				F147013F21A4110300C038E1 /* Main.storyboard in Resources */,
 				F147013B21A410AC00C038E1 /* Models.scnassets in Resources */,
 				F179930421A3B39500573EB6 /* LaunchScreen.storyboard in Resources */,
