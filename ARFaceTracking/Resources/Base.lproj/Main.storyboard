@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARFaceTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arscnView>
+                            <tabBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="lXW-PX-Il0">
+                                <rect key="frame" x="0.0" y="729" width="375" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Transforms" image="transforms" id="SjY-nn-e2d" userLabel="Transforms"/>
+                                    <tabBarItem title="Texture" image="texture" id="oZN-Er-af0" userLabel="Texture"/>
+                                    <tabBarItem title="3D Overlay" image="geometry" id="AzH-cP-msb" userLabel="3D overlay"/>
+                                    <tabBarItem title="Video Texture" image="videoTexture" id="Stf-uR-Ytb" userLabel="Video Texture"/>
+                                    <tabBarItem title="Blend Shapes" image="blendShapes" id="OIg-6U-83Y" userLabel="Blend Shapes"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="bu0-IH-ObU"/>
+                                </connections>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lXW-PX-Il0" firstAttribute="bottom" secondItem="U0K-SW-4ec" secondAttribute="bottom" symbolic="YES" id="6Z9-YJ-oCq"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="9n5-OT-TE9"/>
+                            <constraint firstAttribute="trailing" secondItem="lXW-PX-Il0" secondAttribute="trailing" id="FPu-dC-VJw"/>
+                            <constraint firstAttribute="bottom" secondItem="BrB-h1-WRS" secondAttribute="bottom" id="IeF-RU-HrM"/>
+                            <constraint firstItem="lXW-PX-Il0" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="Uyc-vg-siD"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="lXW-PX-Il0" secondAttribute="trailing" id="k7H-ku-KVL"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="lXW-PX-Il0" secondAttribute="leading" id="rJl-sT-UyP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="tabBar" destination="lXW-PX-Il0" id="MRT-oh-y9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="137"/>
+        </scene>
+        <!--Unsupported View Controller-->
+        <scene sceneID="J7r-xb-FKz">
+            <objects>
+                <viewController title="Unsupported View Controller" id="9dx-S2-6Rh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHg-p7-wo9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsupported Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8c-Rn-Quh" userLabel="Unsupported Device">
+                                <rect key="frame" x="20" y="290" width="335" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIz-YP-FpV">
+                                <rect key="frame" x="20" y="330" width="335" height="152.33333333333337"/>
+                                <string key="text">ARKit face tracking requires a device with a TrueDepth front-facing camera.
+
+Shipping apps must support devices without face tracking. In your app, offer UI to launch face tracking features only if the current device is supported.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <string key="userLabel">ARKit face tracking requires a device with a TrueDepth front-facing camera.  Shipping apps must support devices without face tracking. In your app, offer UI to launch face tracking features only if the current device is supported.</string>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rIz-YP-FpV" secondAttribute="trailing" constant="20" symbolic="YES" id="FHF-Ba-7DJ"/>
+                            <constraint firstItem="rIz-YP-FpV" firstAttribute="centerY" secondItem="fHg-p7-wo9" secondAttribute="centerY" id="R6F-EH-Mx6"/>
+                            <constraint firstItem="rIz-YP-FpV" firstAttribute="centerX" secondItem="fHg-p7-wo9" secondAttribute="centerX" id="aBc-DD-aee"/>
+                            <constraint firstItem="rIz-YP-FpV" firstAttribute="top" secondItem="X8c-Rn-Quh" secondAttribute="bottom" constant="8" symbolic="YES" id="bRH-fK-NAm"/>
+                            <constraint firstItem="rIz-YP-FpV" firstAttribute="width" secondItem="X8c-Rn-Quh" secondAttribute="width" id="h8s-zd-UsR"/>
+                            <constraint firstItem="X8c-Rn-Quh" firstAttribute="centerX" secondItem="fHg-p7-wo9" secondAttribute="centerX" id="hxt-BH-8Bx"/>
+                            <constraint firstItem="rIz-YP-FpV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fHg-p7-wo9" secondAttribute="leading" constant="20" symbolic="YES" id="qGr-Sg-VS8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0rn-wV-WA2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACu-Ng-1r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blendShapes" width="84" height="84"/>
+        <image name="geometry" width="84" height="84"/>
+        <image name="texture" width="84" height="84"/>
+        <image name="transforms" width="84" height="84"/>
+        <image name="videoTexture" width="84" height="84"/>
+    </resources>
+</document>
